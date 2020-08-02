@@ -1,0 +1,39 @@
+<h2>Welcome {{name}}! Are you ready to become a citizen of Samuelville?</h2>
+<form action="/apply" method="POST">
+	<h3>Part 1: Applicant Information</h3>
+	<label for="number">Applicant Number: </label><input type="number" name="number" value="{{id}}" readonly />
+	<br /><br />
+
+	<label for="first">Full legal First, Middle, and Last Name:</label>
+	<input type="text" placeholder="F" name="first" required/>
+	<input type="text" placeholder="M" name="middle" required/>
+	<input type="text" placeholder="L" name="last" required/>
+	<br /><br />
+
+	<label for="gender">Gender:</label><br />
+	<input type="radio" id="male" name="gender" value="male" required>
+	<label for="male">Male</label><br>
+	<input type="radio" id="female" name="gender" value="female" required>
+	<label for="female">Female</label><br>
+	<input type="radio" id="other" name="gender" value="other" required>
+	<label for="other">Other</label>
+	<br /><br />
+
+	<label for="address">Current Street Address: (incl. zip code/postcode)</label><br />
+	<input name="address" type="text" autocomplete="street-address" required />
+	<br /><br />
+
+	<label for="kids">How many kids do you have:</label><br />
+	<input type="number" name="kids" required />
+	<br /><br />
+
+	<label for="crime">Have you ever been found guilty of a crime?</label><br />
+	<input type="radio" id="no" name="crime" value="no" required>
+	<label for="no">Never/Civil Offense</label><br>
+	<input type="radio" id="fel" name="crime" value="felony" required>
+	<label for="fel">Felony</label><br>
+	<input type="radio" id="fare" name="crime" value="fare" required>
+	<label for="fare">Fare Evasion or Tomato Theft</label>
+	<br /><br />
+	<input type="submit" />
+</form>

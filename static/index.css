@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+body {
+	color: #00a1de;
+	margin: 0;
+}
+
+button {
+  width: 400px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #f9461c;
+  color: black;
+	font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ddd;
+  color: black;
+}
+
+input {
+	color: black;
+}
+
+* {
+	font-family: 'Catamaran', monospace;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: 'liga', 'clig', 'kern';
+	text-align: center;
+}
